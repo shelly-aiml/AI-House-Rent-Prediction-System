@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Price Prediction System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="logo">AI Price Predictor</div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/house-price">House Price</a>
+        <a href="/student-rent">Student Rent</a>
+    </div>
+</nav>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1>AI-Based Price Prediction System</h1>
+
+            <p>
+                Machine Learning powered system for predicting
+                house prices and student rental prices.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🏠</div>
+
+                <h2>House Price Prediction</h2>
+
+                <p>
+                    Predict the estimated selling price of a house
+                    using area, bedrooms, bathrooms, floors and parking.
+                </p>
+
+                <a href="/house-price">
+                    <button>Predict House Price →</button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">🎓</div>
+
+                <h2>Student Rent Prediction</h2>
+
+                <p>
+                    Estimate monthly student rent using room size,
+                    facilities, distance from college and amenities.
+                </p>
+
+                <a href="/student-rent">
+                    <button>Predict Student Rent →</button>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Powered by Machine Learning & Flask</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
